@@ -19,14 +19,18 @@ export default function NewIncident () {
 			if ( !localStorage.getItem('ongId') ) {
 				history.push('/')
 			}
-		}, []
+		}, [history]
 	);
+
+	function backToHome() {
+		history.push('/profile')
+	}
 
 	function handleCadastrar(e) {
 		e.preventDefault();
 		const Authorization = localStorage.getItem('ongId');
 		api.post('incidents', { title, description, value}, { headers: { Authorization } }).then(
-			() => { history.push('/profile') }
+			() => backToHome()
 		).catch(
 			err => {
 				const { error="Ocorreu um erro" } = err.data;
