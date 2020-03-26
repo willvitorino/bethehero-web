@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/bethehero-web/static/css/main.c7ca183a.chunk.css",
+    "main.js": "/bethehero-web/static/js/main.87acafd8.chunk.js",
+    "main.js.map": "/bethehero-web/static/js/main.87acafd8.chunk.js.map",
+    "runtime-main.js": "/bethehero-web/static/js/runtime-main.85b08af3.js",
+    "runtime-main.js.map": "/bethehero-web/static/js/runtime-main.85b08af3.js.map",
+    "static/js/2.428b2465.chunk.js": "/bethehero-web/static/js/2.428b2465.chunk.js",
+    "static/js/2.428b2465.chunk.js.map": "/bethehero-web/static/js/2.428b2465.chunk.js.map",
+    "index.html": "/bethehero-web/index.html",
+    "precache-manifest.974477cec4a05c6a71f6560da2a7f5cb.js": "/bethehero-web/precache-manifest.974477cec4a05c6a71f6560da2a7f5cb.js",
+    "service-worker.js": "/bethehero-web/service-worker.js",
+    "static/css/main.c7ca183a.chunk.css.map": "/bethehero-web/static/css/main.c7ca183a.chunk.css.map",
+    "static/js/2.428b2465.chunk.js.LICENSE.txt": "/bethehero-web/static/js/2.428b2465.chunk.js.LICENSE.txt",
+    "static/media/heroes.png": "/bethehero-web/static/media/heroes.1f4b5508.png",
+    "static/media/logo.svg": "/bethehero-web/static/media/logo.7eea718b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.85b08af3.js",
+    "static/js/2.428b2465.chunk.js",
+    "static/css/main.c7ca183a.chunk.css",
+    "static/js/main.87acafd8.chunk.js"
+  ]
+}
