@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link, useHistory} from 'react-router-dom'
 import { FiLogIn } from 'react-icons/fi'
 
@@ -8,9 +8,18 @@ import logo from '../../assets/logo.svg'
 import heroesImg from '../../assets/heroes.png'
 
 export default function Login () {
+	const history = useHistory();
+
 	const [id, setId] = useState('');
 
-	const history = useHistory();
+	useEffect(
+		() => {
+			if ( localStorage.getItem('ongId') ) {
+				history.push('/profile')
+			}
+		},
+		[id]
+	);
 
 	function handleLogin(e) {
 		e.preventDefault();
@@ -25,7 +34,7 @@ export default function Login () {
 				history.push('/profile')
 			}
 		).catch(
-			err => {
+			() => {
 				alert("Falha no Login.")
 			}
 		)
