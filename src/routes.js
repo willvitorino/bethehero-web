@@ -5,9 +5,11 @@ import Register from "./pages/Register";
 import Profile from "./pages/Profile";
 import NewIncident from "./pages/NewIncident";
 
+const baseUrl = '/bethehero-web';
+
 export default function Routes () {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename={baseUrl} >
 			<Switch>
 				<Route path="/" exact component={Login} />
 				<Route path="/register" component={Register} />
